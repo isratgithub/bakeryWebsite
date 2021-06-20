@@ -1,0 +1,137 @@
+// about banner part start
+.about-banner{
+    .about-banner-img{
+        width:100%;
+        height:60vh;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+            
+        .about-content-text{
+            width:165px;
+            height:130px;
+            // border:1px solid white;
+            h1{
+                   text-align: center;
+                   color:white;
+                   font-weight: 400;
+                //    padding-left: 20px;
+            }
+            ul{
+                text-align: center;
+                padding: 15px 0px;
+                li{
+                    display:inline-block;
+                    color:white;
+                    padding: 0px 2px;
+                         
+                        
+                }
+            }
+        }
+        
+    }
+}
+// about banner part end
+
+// baked part start
+.baked-part{
+    // width:100%;
+    // height:100vh;
+    padding: 87px 0px;
+    .baked-part-text{
+        h2{
+            color:#000;
+            font-size: 45px;
+            letter-spacing: 3.5px;
+        }
+        p{
+            font-size: 14px;
+            padding: 50px 0px 14px 0px;
+        }
+        .sign{
+            font-family: 'Dawning of a New Day', cursive;
+            font-size: 31px;
+        }   
+    }
+    .baked-part-img{
+        width:100%;
+        height:552px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    } 
+}
+// baked part end
+
+// journey part start
+.journey{
+    background: #f7f7f7;
+}
+@media screen and (max-width: 767px) {
+    .baked-part{
+        padding: 60px 0px;
+        .baked-part-text{
+            h2{
+                font-size: 25px;
+            }
+            p{
+                padding-top:20px;
+            }
+        }
+    }
+}
+
+// journey part end
+
+// coffee-maker-background part start
+.coffee-maker-background{
+    
+    .coffee-maker-background-img{
+        width:100%;
+        height:70vh;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        background-repeat: no-repeat;
+       
+        .coffee-maker-background-content{
+            width:660px;
+            height:210px;
+            display:block;
+            h2{
+                color:#fff;
+                font-size: 30px;
+            }
+            p{
+                font-size: 14px;
+                color:#fff;
+                padding:13px 0px;
+            }
+            a{
+                color:#fff;
+                text-transform: uppercase;
+                background:$p_color;
+                font-size: 16px;
+                padding:10px 26px;
+                font-weight: 500;
+                margin-bottom:25px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 567px) {
+
+}
+// coffee-maker-background part end
+

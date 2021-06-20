@@ -1,0 +1,42 @@
+
+// utils loads
+@import "utils/_variables";
+@import "utils/_helpers";
+@import "utils/_mixins";
+@import "utils/_functions";
+
+// base loads
+
+@import "base/_reset";
+@import "base/_typography";
+
+// components loads
+
+@import "components/_buttons";
+@import "components/_carousel";
+
+// layout loads
+
+@import "layout/_header";
+@import "layout/_navigation";
+@import "layout/_grid";
+@import "layout/_sidebar";
+@import "layout/_footer";
+
+// pages loads
+
+@import "pages/_home";
+@import "pages/_about";
+@import "pages/_contact";
+@import "pages/_signin";
+@import "pages/_blog";
+@import "pages/_shop";
+
+// themes loads
+
+@import "themes/_themes";
+@import "themes/_admin";
+
+// vendors loads 
+
+@import "vendors/_bootstrap";

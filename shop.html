@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery</title>
+    <!-- animate file -->
+    <link rel="stylesheet" href="assests/css/animate.css">
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="assests/css/bootstrap.min.css">
+    <!-- font-awesome file -->
+    <link rel="stylesheet" href="assests/fonts/font-awesome/css/all.css">
+    <!-- themify icon -->
+    <link rel="stylesheet" href="assests/fonts/themify/themify-icons.css">
+
+    <link rel="shortcut icon" href="assests/media/img/cropped-oceanwp-bakery-icon-32x32.png" type="image/x-icon">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
+    <!-- owl carousel file -->
+    <link rel="stylesheet" href="assests/css/owl.carousel.min.css">
+    <!-- pretty photo file -->
+    <link rel="stylesheet" href="assests/css/prettyPhoto.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="assests/css/style.css">
+</head>
+<body>
+        <!-- menu start -->
+        <section class="header-menu">
+            <nav class="navbar navbar-expand-md bg-dark head-bar">
+                <div class="container-fluid head-content">
+                    <a class="navbar-brand header-img" href="">
+                        <img class="logo" src="assests/media/img/bakery_logo-.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <i class="fas fa-bars text-white"></i>
+                    </button>
+                    <div class="collapse navbar-collapse menu-list" id="menu">
+                        <ul class="navbar-nav w-100 d-flex flex-md-row justify-content-md-end">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                                <div class="menu-underline"></div>
+                                        
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"href="about.html">About</a>
+                                <div class="menu-underline"></div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"href="shop.html">Shop</a>
+                                <div class="menu-line"></div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"href="blog.html">Blog</a>
+                                <div class="menu-blog"></div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"href="contact.html">Contact</a>
+                                <div class="menu-lineline"></div>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#hii">Sign In / Join</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link"href="#"><i class="fas fa-shopping-bag"></i><a>
+    
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link"href="#"><i class="fas fa-search"></i></a>
+                            <li>
+    
+                        </ul>
+                    </div>
+                   
+                </div>
+            </nav>
+        </section>
+        <!-- menu end -->
+
+        <!-- shop banner part start -->
+        <scetion class="shop-banner">
+            <div class="row">
+                <div class="col-12">
+                    <div class="shop-banner-img" style="background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('assests/media/img/img11.jpeg');">
+                        <div class="shop-content-text">
+                            <h1>Products</h1>
+                            <p>This is where you can add new products to your store.</p>
+                            <ul>
+                                <li><a href="index.html"><i class="fas fa-home"style="color:white;font-size: 14px;"></i></a></li>
+                                <li><a href="#"><i class="fas fa-greater-than"style="color:white;font-size: 9px;"></i></a></li>
+                                <li><a href="shop.html"style="color:white;font-size: 14px;">Products</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </scetion>
+        <!-- shhop banner part end -->
+        <!-- main shop part start -->
+        <section class="main-shop">
+            <div class="shop-part">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12 g-3">
+                        <div class="range-product ">
+                            <div class="all">
+                                <div class="rangee">
+                                    <div class="mb-2">
+                                        <div class="range-label"></div>
+                                        <label for="rangebar" class="form-label">Filter By Price</label>
+                                        <input type="range" class="form-range slider" id="rangebar" min="10" max="500" step="10" value="10">
+                                        <ul>
+                                            <li> <p style="margin-left:-30px;">PRICE:&nbsp$<span id="demo">10</span> - $500</p></li>
+                                            <li class="text-center"><a href=""class="btn ">FILTER</a></li>
+                                        </ul>
+                                    
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="product-category">
+                                    <div class="mb-3">
+                                        <div class="product-label"></div>
+                                        <label for="product-bar" class="form-label mb-4">Product Categories</label>
+                                        <ul>
+                                            <li>
+                                                <div class="bread mb-2">
+                                                    <input type="radio" id="bread" name="bread" value="breads">
+                                                    <label href="#">Bread & Buns
+                                                        
+                                                    </label>
+                                                    <span class="badge rounded-pill">5</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="bread mb-2">
+                                                    <input type="radio" id="cake" name="breads" value="cake">
+                                                    <label href="#">Cake
+                                                        
+                                                    </label>
+                                                    <span class="badge rounded-pill">7</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="bread mb-2">
+                                                    <input type="radio" id="Cupcakes" name="breads" value="Cupcakes">
+                                                    <label href="#">Cupcakes
+                                    
+                                                    </label>
+                                                    <span class="badge rounded-pill">3</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="bread mb-2">
+                                                    <input type="radio" id="Desserts" name="breads" value="Desserts">
+                                                    <label href="#">Desserts
+                                                        <!-- <span class="badge">5</span> -->
+                                                    </label>
+                                                    <span class="badge rounded-pill">2</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="bread mb-2">
+                                                    <input type="radio" id="Ice Creame" name="breads" value="Ice Creame">
+                                                    <label href="#">Ice Creame
+                                                        
+                                                    </label>
+                                                    <span class="badge rounded-pill">3</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="bread mb-2">
+                                                    <input type="radio" id="Pasty" name="breads" value="Pasty">
+                                                    <label for="Pasty">Pasty
+                                                        
+                                                    </label>
+                                                    <span class="badge rounded-pill">3</span>
+                                                    
+                                                </div>
+                                        
+                                            </li>
+                                            <li>
+                                                <div class="bread mb-2">
+                                                    <input type="radio" id="Run Toast" name="breads" value="Run Toast">
+                                                    <label href="#">Run Toast
+                                                    </label>
+                                                    <span class="badge rounded-pill">3</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                   
+                                </div>
+                                <div class="product-category-and-button">
+                                    <div class="mb-3">
+                                        <div class="product-category-label"></div>
+                                        <label for="product-bar" class="form-label mb-4 product-category-bar">Product Categories</label>
+
+                                    </div>
+                                    <div class="product-cat-all-btn">
+                                        <button type="button" data-filter=".bb" class="btn"id="buns" href="">bread & buns</button>
+                                        <button type="button" data-filter=".ck" class="btn " id="cake" href="">cake</button>
+                                        <button type="button" data-filter=".cp" class="btn " id="cupcake" href="">cupcakes</button>
+                                        <button type="button" data-filter=".dd" class="btn " id="dessert" href="">desserts</button>
+                                        <button type="button" data-filter=".ic" class="btn " id="icecreame" href="">ice creame</button>
+                                        <button type="button" data-filter=".pp" class="btn " id="pasty" href="">pasty</button>
+                                        <button type="button" data-filter=".rr" class="btn " id="run-roast" href="">run toast</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-sm-12 g-3">
+                        <div class="product-all-category ">
+                            <div class="top-product-bar">
+                            </div>
+                            <div class="middle-product-bar">
+                                <ul>
+                                    <li><a href=""class="active"><i class="ti-layout-grid2"></i></a></li>
+                                    <li><a href=""><i class="fas fa-list-ul"></i></a></li>
+                                    <li> <select name="" id="" class="form-select form-select-sm ">
+                                        <option value="" selected>Default Sorting</option>
+                                        <option value="">Sort by popularity</option>
+                                        <option value="">Sort by average rating</option>
+                                        <option value="">Sort by latest</option>
+                                        <option value="">Sort by price: low to high</option>
+                                        <option value="">Sort by price: high to low</option>
+                                    </select></li>
+                                </ul>
+                                
+                                
+                            </div>
+                            <div class="bottom-product-bar"></div>
+                            <div class="product-template">
+                                
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-12 g-2 text-center">
+                                        <div class="mix ck product-template-product-detail ">
+                                            <div class="product-detail">
+                                                <div class="product-det-img" style="background-image: url('assests/media/img/cake-3019645_1280-300x300.jpg');">
+                                                    <div class="product-det-view">
+                                                        <a href="">Quick View</a>
+                                                    </div>
+                                                    
+                                                    
+                                                </div>
+                                                <div class="product-det-det text-center">
+                                                    <p><a href="#">Cake</a></p>
+                                                    <p><a href="#">black forest cake</a></p>
+                                                    <h5>$67.98</h5>
+                                                </div>
+                                                <div class="product-det-submit text-center">
+                                                    <a href="#"class="btn product-cartitem"  data-bs-toggle="modal" data-bs-target="#product-cart">Add to cart</a>
+                                                    <div id="product-cart" class="modal fade">
+                                                        <div class="modal-dialog modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="bt d-flex flex-row justify-content-end">
+                                                                    <button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <i style="background: #5bc142;color:white;padding: 30px;border-radius: 50%;font-size: 30px;"class="ti-check"></i>
+                                                                    <div class="product-item-detail-view">
+                                                                        <h1>Item added to your cart</h1>
+                                                                        <p>Items in the cart</p>
+                                                                    </div>
+                                                                    <div class="continue-button">
+                                                                        <button class="btn btn-outline-primary border-2 continue-shop" href="#">Continue Shoping</button>
+                                                                    </div>
+                                                                   
+                                                                    <div class="cart-button">
+                                                                        <button class="btn btn-outline-success shopcart-button border-2" href="#">Go to the Cart</button>
+                                                                    </div>
+                                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+            
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 g-2 text-center">
+                                        <div class="mix bb product-template-product-detail ">
+                                            <div class="product-detail ">
+                                                <div class="product-det-img" style="background-image: url('assests/media/img/bread-1915886_1280-300x300.png');">
+                                                    <div class="product-det-view">
+                                                        <a href="">Quick View</a>
+                                                    </div>
+                                                    
+                                                    
+                                                </div>
+                                                <div class="product-det-det text-center">
+                                                    <p><a href="#">Bread & Buns</a></p>
+                                                    <p><a href="#">brown bread</a></p>
+                                                    <h5>$69.99</h5>
+                                                </div>
+                                                <div class="product-det-submit text-center">
+                                                    <a href="#"class="btn product-cartitem"  data-bs-toggle="modal" data-bs-target="#product-cart">Add to cart</a>
+                                                    <div id="product-cart" class="modal fade">
+                                                        <div class="modal-dialog modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="bt d-flex flex-row justify-content-end">
+                                                                    <button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <i style="background: #5bc142;color:white;padding: 30px;border-radius: 50%;font-size: 30px;"class="ti-check"></i>
+                                                                    <div class="product-item-detail-view">
+                                                                        <h1>Item added to your cart</h1>
+                                                                        <p>Items in the cart</p>
+                                                                    </div>
+                                                                    <div class="continue-button">
+                                                                        <button class="btn btn-outline-primary border-2 continue-shop" href="#">Continue Shoping</button>
+                                                                    </div>
+                                                                   
+                                                                    <div class="cart-button">
+                                                                        <button class="btn btn-outline-success shopcart-button border-2" href="#">Go to the Cart</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+            
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 g-2 text-center">
+                                        <div class="mix bb product-template-product-detail">
+                                            <div class="product-detail">
+                                                <div class="product-det-img" style="background-image: url('assests/media/img/french-gross-bun-1605378_1280-300x300.jpg');">
+                                                    <div class="product-det-view">
+                                                        <a href="">Quick View</a>
+                                                    </div>
+                                                    
+                                                    
+                                                </div>
+                                                <div class="product-det-det text-center">
+                                                    <p><a href="#">Bread & Buns</a></p>
+                                                    <p><a href="#">burger bun</a></p>
+                                                    <h5>$65.99</h5>
+                                                </div>
+                                                <div class="product-det-submit text-center">
+                                                    <a href="#"class="btn product-cartitem"  data-bs-toggle="modal" data-bs-target="#product-cart">Add to cart</a>
+                                                    <div id="product-cart" class="modal fade">
+                                                        <div class="modal-dialog modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="bt d-flex flex-row justify-content-end">
+                                                                    <button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <i style="background: #5bc142;color:white;padding: 30px;border-radius: 50%;font-size: 30px;"class="ti-check"></i>
+                                                                    <div class="product-item-detail-view">
+                                                                        <h1>Item added to your cart</h1>
+                                                                        <p>Items in the cart</p>
+                                                                    </div>
+                                                                    <div class="continue-button">
+                                                                        <button class="btn btn-outline-primary border-2 continue-shop" href="#">Continue Shoping</button>
+                                                                    </div>
+                                                                    
+                                                                    <div class="cart-button">
+                                                                        <button class="btn btn-outline-success shopcart-button border-2" href="#">Go to the Cart</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+            
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            
+                            
+                            
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-12 g-2 text-center">
+                                        <div class="mix pp product-template-product-detail">
+                                            <div class="product-detail">
+                                                <div class="product-det-img" style="background-image: url('assests/media/img/cake-2558610_1280-300x300.jpg');">
+                                                    <div class="product-det-view">
+                                                        <a href="">Quick View</a>
+                                                    </div>    
+                                                </div>
+                                                <div class="product-det-det text-center">
+                                                    <p><a href="#">Pastry</a></p>
+                                                    <p><a href="#">butterscotch pastry</a></p>
+                                                    <h5>$17.29</h5>
+                                                </div>
+                                                <div class="product-det-submit text-center">
+                                                    <a href="#"class="btn product-cartitem"  data-bs-toggle="modal" data-bs-target="#product-cart">Add to cart</a>
+                                                    <div id="product-cart" class="modal fade">
+                                                        <div class="modal-dialog modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="bt d-flex flex-row justify-content-end">
+                                                                    <button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <i style="background: #5bc142;color:white;padding: 30px;border-radius: 50%;font-size: 30px;"class="ti-check"></i>
+                                                                    <div class="product-item-detail-view">
+                                                                        <h1>Item added to your cart</h1>
+                                                                        <p>Items in the cart</p>
+                                                                    </div>
+                                                                    <div class="continue-button">
+                                                                        <button class="btn btn-outline-primary border-2 continue-shop" href="#">Continue Shoping</button>
+                                                                    </div>
+                                                                    
+                                                                    <div class="cart-button">
+                                                                        <button class="btn btn-outline-success shopcart-button border-2" href="#">Go to the Cart</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+        
+                                            </div>
+                                        </div>
+                                    </div>         
+                            
+                                    <div class="col-md-4 col-sm-12 g-2 text-center">
+                                        <div class="mix dd product-template-product-detail">   
+                                            <div class="product-detail">
+                                                <div class="product-det-img" style="background-image: url('assests/media/img/donut-2031755_1280-300x300.jpg');">
+                                                    <div class="product-det-view">
+                                                        <a href="">Quick View</a>
+                                                    </div>
+                                        
+                                                </div>
+                                                <div class="product-det-det text-center">
+                                                    <p><a href="#">Desserts</a></p>
+                                                    <p><a href="#">caramel custard</a></p>
+                                                    <h5>$24.99</h5>
+                                                </div>
+                                                <div class="product-det-submit text-center">
+                                                    <a href="#"class="btn product-cartitem"  data-bs-toggle="modal" data-bs-target="#product-cart">Add to cart</a>
+                                                    <div id="product-cart" class="modal fade">
+                                                        <div class="modal-dialog modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="bt d-flex flex-row justify-content-end">
+                                                                    <button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <i style="background: #5bc142;color:white;padding: 30px;border-radius: 50%;font-size: 30px;"class="ti-check"></i>
+                                                                    <div class="product-item-detail-view">
+                                                                        <h1>Item added to your cart</h1>
+                                                                        <p>Items in the cart</p>
+                                                                    </div>
+                                                                    <div class="continue-button">
+                                                                        <button class="btn btn-outline-primary border-2 continue-shop" href="#">Continue Shoping</button>
+                                                                    </div>
+                                                                    
+                                                                    <div class="cart-button">
+                                                                        <button class="btn btn-outline-success shopcart-button border-2" href="#">Go to the Cart</button>
+                                                                    </div>
+                                                                  
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-12 g-2 text-center">
+                                        <div class="mix ck product-template-product-detail"> 
+                                            <div class="product-detail">
+                                                <div class="product-det-img" style="background-image: url('assests/media/img/pie-2980431_1280-300x300.jpg');">
+                                                    <div class="product-det-view">
+                                                        <a href="">Quick View</a>
+                                                    </div>
+                                        
+                                                </div>
+                                                <div class="product-det-det text-center">
+                                                    <p><a href="#">Cake</a></p>
+                                                    <p><a href="#">chocolate cake</a></p>
+                                                    <h5>$349.99</h5>
+                                                </div>
+                                                <div class="product-det-submit text-center">
+                                                    <a href="#"class="btn product-cartitem"  data-bs-toggle="modal" data-bs-target="#product-cart">Add to cart</a>
+                                                    <div id="product-cart" class="modal fade">
+                                                        <div class="modal-dialog modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="bt d-flex flex-row justify-content-end">
+                                                                    <button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <i style="background: #5bc142;color:white;padding: 30px;border-radius: 50%;font-size: 30px;"class="ti-check"></i>
+                                                                    <div class="product-item-detail-view">
+                                                                        <h1>Item added to your cart</h1>
+                                                                        <p>Items in the cart</p>
+                                                                    </div>
+                                                                    <div class="continue-button">
+                                                                        <button class="btn btn-outline-primary border-2 continue-shop" href="#">Continue Shoping</button>
+                                                                    </div>
+                                                                
+                                                                    <div class="cart-button">
+                                                                        <button class="btn btn-outline-success shopcart-button border-2" href="#">Go to the Cart</button>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-12 g-2 text-center">
+                                        <div class="mix cp product-template-product-detail">
+                                            <div class="product-detail">
+                                                <div class="product-det-img" style="background-image: url('assests/media/img/cupcake-252805_1280-300x300.jpg');">
+                                                    <div class="product-det-view">
+                                                        <a href="">Quick View</a>
+                                                    </div>    
+                                                </div>
+                                                <div class="product-det-det text-center">
+                                                    <p><a href="#">Cupcakes</a></p>
+                                                    <p><a href="#">chocolate cupcake</a></p>
+                                                    <h5>$17.29</h5>
+                                                </div>
+                                                <div class="product-det-submit text-center">
+                                                    <a href="#"class="btn product-cartitem"  data-bs-toggle="modal" data-bs-target="#product-cart">Add to cart</a>
+                                                    <div id="product-cart" class="modal fade">
+                                                        <div class="modal-dialog modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="bt d-flex flex-row justify-content-end">
+                                                                    <button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <i style="background: #5bc142;color:white;padding: 30px;border-radius: 50%;font-size: 30px;"class="ti-check"></i>
+                                                                    <div class="product-item-detail-view">
+                                                                        <h1>Item added to your cart</h1>
+                                                                        <p>Items in the cart</p>
+                                                                    </div>
+                                                                    <div class="continue-button">
+                                                                        <button class="btn btn-outline-primary border-2 continue-shop" href="#">Continue Shoping</button>
+                                                                    </div>
+                                                                    
+                                                                    <div class="cart-button">
+                                                                        <button class="btn btn-outline-success shopcart-button border-2" href="#">Go to the Cart</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+        
+                                            </div>
+                                        </div>
+                                    </div>         
+                            
+                                    <div class="col-md-4 col-sm-12 g-2 text-center">
+                                        <div class="mix pp product-template-product-detail">   
+                                            <div class="product-detail">
+                                                <div class="product-det-img" style="background-image: url('assests/media/img/heart-3111760_1280-300x300.jpg');">
+                                                    <div class="product-det-view">
+                                                        <a href="">Quick View</a>
+                                                    </div>
+                                        
+                                                </div>
+                                                <div class="product-det-det text-center">
+                                                    <p><a href="#">Pastry</a></p>
+                                                    <p><a href="#">chocolate pastry</a></p>
+                                                    <h5>$24.99</h5>
+                                                </div>
+                                                <div class="product-det-submit text-center">
+                                                    <a href="#"class="btn product-cartitem"  data-bs-toggle="modal" data-bs-target="#product-cart">Add to cart</a>
+                                                    <div id="product-cart" class="modal fade">
+                                                        <div class="modal-dialog modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="bt d-flex flex-row justify-content-end">
+                                                                    <button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <i style="background: #5bc142;color:white;padding: 30px;border-radius: 50%;font-size: 30px;"class="ti-check"></i>
+                                                                    <div class="product-item-detail-view">
+                                                                        <h1>Item added to your cart</h1>
+                                                                        <p>Items in the cart</p>
+                                                                    </div>
+                                                                    <div class="continue-button">
+                                                                        <button class="btn btn-outline-primary border-2 continue-shop" href="#">Continue Shoping</button>
+                                                                    </div>
+                                                                    
+                                                                    <div class="cart-button">
+                                                                        <button class="btn btn-outline-success shopcart-button border-2" href="#">Go to the Cart</button>
+                                                                    </div>
+                                                                  
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-12 g-2 text-center">
+                                        <div class="mix rr product-template-product-detail"> 
+                                            <div class="product-detail">
+                                                <div class="product-det-img" style="background-image: url('assests/media/img/bread-933228_1280-300x300.jpg');">
+                                                    <div class="product-det-view">
+                                                        <a href="">Quick View</a>
+                                                    </div>
+                                        
+                                                </div>
+                                                <div class="product-det-det text-center">
+                                                    <p><a href="#">Rust Toast</a></p>
+                                                    <p><a href="#">rust toast</a></p>
+                                                    <h5>$40.51</h5>
+                                                </div>
+                                                <div class="product-det-submit text-center">
+                                                    <a href="#"class="btn product-cartitem"  data-bs-toggle="modal" data-bs-target="#product-cart">Add to cart</a>
+                                                    <div id="product-cart" class="modal fade">
+                                                        <div class="modal-dialog modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="bt d-flex flex-row justify-content-end">
+                                                                    <button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <i style="background: #5bc142;color:white;padding: 30px;border-radius: 50%;font-size: 30px;"class="ti-check"></i>
+                                                                    <div class="product-item-detail-view">
+                                                                        <h1>Item added to your cart</h1>
+                                                                        <p>Items in the cart</p>
+                                                                    </div>
+                                                                    <div class="continue-button">
+                                                                        <button class="btn btn-outline-primary border-2 continue-shop" href="#">Continue Shoping</button>
+                                                                    </div>
+                                                                
+                                                                    <div class="cart-button">
+                                                                        <button class="btn btn-outline-success shopcart-button border-2" href="#">Go to the Cart</button>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-12 g-2 text-center ">
+                                        
+                                        <div class="mix ic product-template-product-detail">
+                                            <div class="product-detail">
+                                                <div class="product-det-img" style="background-image: url('assests/media/img/ice-cream-3793246_1280-300x300.jpg');">
+                                                    <div class="product-det-view">
+                                                        <a href="">Quick View</a>
+                                                    </div>    
+                                                </div>
+                                                <div class="product-det-det text-center">
+                                                    <p><a href="#">Ice cream</a></p>
+                                                    <p><a href="#">frozen dessert</a></p>
+                                                    <h5>$25.99</h5>
+                                                </div>
+                                                <div class="product-det-submit text-center">
+                                                    <a href="#"class="btn product-cartitem"  data-bs-toggle="modal" data-bs-target="#product-cart">Add to cart</a>
+                                                    <div id="product-cart" class="modal fade">
+                                                        <div class="modal-dialog modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="bt d-flex flex-row justify-content-end">
+                                                                    <button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <i style="background: #5bc142;color:white;padding: 30px;border-radius: 50%;font-size: 30px;"class="ti-check"></i>
+                                                                    <div class="product-item-detail-view">
+                                                                        <h1>Item added to your cart</h1>
+                                                                        <p>Items in the cart</p>
+                                                                    </div>
+                                                                    <div class="continue-button">
+                                                                        <button class="btn btn-outline-primary border-2 continue-shop" href="#">Continue Shoping</button>
+                                                                    </div>
+                                                                    
+                                                                    <div class="cart-button">
+                                                                        <button class="btn btn-outline-success shopcart-button border-2" href="#">Go to the Cart</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+        
+                                            </div>
+                                        </div>
+                                    </div>         
+                            
+                                    <div class="col-md-4 col-sm-12 g-2 text-center ">
+                                        <div class="mix cp product-template-product-detail">   
+                                            <div class="product-detail">
+                                                <div class="product-det-img" style="background-image: url('assests/media/img/cakes-1245725_1280-300x300.jpg');">
+                                                    <div class="product-det-view">
+                                                        <a href="">Quick View</a>
+                                                    </div>
+                                        
+                                                </div>
+                                                <div class="product-det-det text-center">
+                                                    <p><a href="#">Cupcakes</a></p>
+                                                    <p><a href="#">cupcake</a></p>
+                                                    <h5>$24.99</h5>
+                                                </div>
+                                                <div class="product-det-submit text-center">
+                                                    <a href="#"class="btn product-cartitem"  data-bs-toggle="modal" data-bs-target="#product-cart">Add to cart</a>
+                                                    <div id="product-cart" class="modal fade">
+                                                        <div class="modal-dialog modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="bt d-flex flex-row justify-content-end">
+                                                                    <button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <i style="background: #5bc142;color:white;padding: 30px;border-radius: 50%;font-size: 30px;"class="ti-check"></i>
+                                                                    <div class="product-item-detail-view">
+                                                                        <h1>Item added to your cart</h1>
+                                                                        <p>Items in the cart</p>
+                                                                    </div>
+                                                                    <div class="continue-button">
+                                                                        <button class="btn btn-outline-primary border-2 continue-shop" href="#">Continue Shoping</button>
+                                                                    </div>
+                                                                    
+                                                                    <div class="cart-button">
+                                                                        <button class="btn btn-outline-success shopcart-button border-2" href="#">Go to the Cart</button>
+                                                                    </div>
+                                                                  
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-12 g-2 text-center">
+                                        <div class="mix dd product-template-product-detail"> 
+                                            <div class="product-detail">
+                                                <div class="product-det-img" style="background-image: url('assests/media/img/pexels-photo-239581-300x300.jpeg');">
+                                                    <div class="product-det-view">
+                                                        <a href="">Quick View</a>
+                                                    </div>
+                                        
+                                                </div>
+                                                <div class="product-det-det text-center">
+                                                    <p><a href="#">Desserts</a></p>
+                                                    <p><a href="#">donuts</a></p>
+                                                    <h5>$349.99</h5>
+                                                </div>
+                                                <div class="product-det-submit text-center">
+                                                    <a href="#"class="btn product-cartitem"  data-bs-toggle="modal" data-bs-target="#product-cart">Add to cart</a>
+                                                    <div id="product-cart" class="modal fade">
+                                                        <div class="modal-dialog modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="bt d-flex flex-row justify-content-end">
+                                                                    <button type="button" class="btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <i style="background: #5bc142;color:white;padding: 30px;border-radius: 50%;font-size: 30px;"class="ti-check"></i>
+                                                                    <div class="product-item-detail-view">
+                                                                        <h1>Item added to your cart</h1>
+                                                                        <p>Items in the cart</p>
+                                                                    </div>
+                                                                    <div class="continue-button">
+                                                                        <button class="btn btn-outline-primary border-2 continue-shop" href="#">Continue Shoping</button>
+                                                                    </div>
+                                                                
+                                                                    <div class="cart-button">
+                                                                        <button class="btn btn-outline-success shopcart-button border-2" href="#">Go to the Cart</button>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                
+                                   
+                            </div>
+                        </div>
+                        <div class="page-value d-flex justify-content-end">
+                            <nav aria-lebel="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                    <a href="shop.html" class="page-link">
+                                        <span aria lebel="true">&laquo</span>
+                                    </a>
+                                    </li>
+                                    <li class="page-item"><a href="shop.html" class="page-link">1</a></li>
+                                    <li class="page-item"><a href="shop.html" class="page-link">2</a></li>
+                                    <li class="page-item"><a href="shop.html" class="page-link">3</a></li>
+                                    <li class="page-item">
+                                        <a href="shop.html" class="page-link">
+                                            <span aria-lebel="true">&raquo</span>
+                                        </a>
+                                    </li>
+                                </ul>
+    
+                            </nav>
+                        </div>
+                        
+                     
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <!-- main shop part end -->
+        <!-- footer part start -->
+    <footer>
+        <div class="footer-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-link">
+                            <h2>Bakery</h2>
+                            <p>Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.</p>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fas fa-envelope-open-text"></i></a>
+                            <a href=""><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-menu">
+                            <h5>Quick Links</h5>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Store</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                       
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-contact">
+                            <h5>Weekly Newsletter</h5>
+                            <p>Get all latest content delivered to your email a few times a month. Updates and news about all categories will send to you.</p>
+                            <div class="mb-3 form-contact">
+                                <input class="form-control"placeholder="Email" type="text">
+                                <a class="btn btn-sm"href="">Go</a>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="accept">
+                                    <label class="form-check-label" for="accept"style="font-size: 14px;">Accept GDPR Terms</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+                
+                
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p>&copy Copyright-Israt Jahan</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+    <!-- footer part end -->
+    <!-- sign-in-pop-up start -->
+    <div class="sign-in-form">
+        <div id="hii"class="modal fade">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                                            
+                    <div class="bt d-flex flex-row justify-content-end">
+                        <button type="button" class=" btn-close me-3 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="community text-center">
+                            <h3>Log In</h3>
+                            <p>Become a part of our community!</p>
+                            <div class="stable">
+                                <h6></h6>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="logedIn mx-auto w-75">
+                                <form action="" class="login-form">
+                                    <div class="mb-3">
+                                        <label class="form-label"for="name">Username</label>
+                                        <input class="form-control" type="text" id="name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="pass">Password</label>
+                                        <input class="form-control" type="password" id="pass">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="checkbox" class="form-check-input" id="check">
+                                        <label class="form-check-label text-secondary" for="check">Remember Me</label>
+                                    </div>
+                                    <div class="log-button text-center">
+                                        <a class="btn w-100 send" href="#">Login</button>
+                                        <a href="">Forgot your password? Get help</a>
+                                    </div>
+                                                                        
+                                </form>
+                            </div>
+                                                            
+                        </div>
+                                        
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+    <!-- sign-in-pop-up-end -->
+
+
+
+
+
+
+
+
+
+        <script>
+            var slider = document.getElementById("rangebar");
+            var output = document.getElementById("demo");
+            slider.oninput = function(){
+                 output.innerHTML=this.value;
+            }
+        </script>
+        <!-- bootstrap js -->
+        <script src="assests/js/bootstrap.bundle.min.js"></script>
+        <!-- jquery js -->
+        <script src="assests/js/jquery-3.6.0.min.js"></script>
+        <!-- <script src="assests/js/jquery-1.6.1.min.js"></script> -->
+        <!-- owl carousel js -->
+        <script src="assests/js/owl.carousel.min.js"></script>
+        <!-- mixitub js -->
+        <script src="assests/js/mixitup.min.js"></script>
+        <!-- pretty photo -->
+        <script src="assests/js/jquery.prettyPhoto.js"></script>
+        <!-- custom js -->
+        <script src="assests/js/custom.js"></script>
+        <script>
+            var mixer = mixitup('.shop-part');
+        </script>
+        </body>
+        </html>
